@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Speech Synthesis</title>
+  </head>
+  <body>
+    <div class="showcase">
+      <div class="voiceinator">
+        <h1>The Voiceinator 5000</h1>
+        <select name="voice" id="voices">
+          <option value="">Select A Voice</option>
+        </select>
+        <label for="rate">Rate:</label>
+        <input
+          type="range"
+          ,
+          name="rate"
+          min="0"
+          max="3"
+          value="1"
+          step="0.1"
+        />
+        <label for="pith">Pith:</label>
+        <input type="range" name="pitch" min="0" max="2" step="0.1" />
+        <textarea id="textarea" name="text">Hello I love JavaScript</textarea>
+        <div class="btn-container">
+          <button id="stop">Stop!</button>
+          <button id="speak">Speak</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
